@@ -1,0 +1,50 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SareWallet.sol": "ShareWallet"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SareWallet.sol": {
+			"keccak256": "0x803d8e92c9268861c7c7e1b5445e3c14bd51c871ad421811f8383846b0344694",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d50f2c1c9340405719609009a820538a79c0db203ee3f9341b69b72e7f0f5af1",
+				"dweb:/ipfs/QmZG4kmXF9M8ovaS6z1wrvpPwdZjDGARzvti1CnxdfBTLY"
+			]
+		}
+	},
+	"version": 1
+}
