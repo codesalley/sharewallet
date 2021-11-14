@@ -4,23 +4,10 @@ pragma solidity ^0.8.10;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Permission {
-    address owner;
-
-    constructor() {
-        owner = msg.sender;
-    }
-
-    modifier OnlyOwner() {
-        require(msg.sender == owner, "you are not the ownder");
-        _;
-    }
-}
-
-contract ShareWallet is Permission {
+contract ShareWallet is Ownable {
     function withrawMoney(address payable _to, uint256 _amount)
         public
-        OnlyOwner
+        onlyOwner
     {
         _to.transfer(_amount);
     }
