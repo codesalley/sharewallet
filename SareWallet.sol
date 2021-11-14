@@ -2,6 +2,8 @@
 
 pragma solidity ^0.8.10;
 
+import "@openzeppelin/contracts/access/Ownable.sol";
+
 contract Permission {
     address owner;
 
@@ -16,5 +18,12 @@ contract Permission {
 }
 
 contract ShareWallet is Permission {
+    function withrawMoney(address payable _to, uint256 _amount)
+        public
+        OnlyOwner
+    {
+        _to.transfer(_amount);
+    }
+
     receive() external payable {}
 }
